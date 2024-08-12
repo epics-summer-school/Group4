@@ -1,0 +1,29 @@
+OutTerminator = LF;
+ReadTimeout = 2000;
+ReplyTimeout =20000;
+getModel{
+
+    out"*IDN?";
+    in "%37c";
+    ExtraInput= Ignore;
+}
+getXValue{
+    out "FETCh:DC? X";
+    in "%6f";
+    ExtraInput= Ignore;
+}
+getYValue{
+    out "FETCh:DC? Y";
+    in "%6f";
+    ExtraInput= Ignore;
+}
+getZValue{
+    out "FETCh:DC? Z";
+    in "%6f";
+    ExtraInput= Ignore;
+}
+getAllValue{
+    out "FETCh:DC? ALL";
+    in "%6f";
+    ExtraInput= Ignore;
+}
