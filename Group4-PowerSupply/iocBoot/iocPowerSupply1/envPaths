@@ -1,0 +1,5 @@
+epicsEnvSet("IOC","iocPowerSupply1")
+epicsEnvSet("TOP","/home/epics/Downloads/FukingShit/PowerSupply")
+epicsEnvSet("EPICS_BASE","/opt/epics/base-7.0.8")
+epicsEnvSet("STREAM","/opt/epics/stream-2.8.24")
+epicsEnvSet("ASYN","/opt/epics/asyn-4.44.2")

@@ -1,4 +1,4 @@
-record(stringin, "Group4:GssMtr:Model")
+record(stringin, "Group4:GssMtr:Model:get")
 {
     field(DESC, "Returns the details of the device")
     field(PINI, "YES")

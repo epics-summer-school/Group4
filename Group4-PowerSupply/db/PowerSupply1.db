@@ -1,0 +1,95 @@
+record(ai, "$(user):Curr:get") {
+
+ 
+field(DESC, "Get the Current")
+field(DTYP, "stream")
+field(INP, "@PowerSupply1.proto getCurr DEV1")
+field(SCAN, "2 second")
+field(EGU, "A")
+field(PINI, "YES")
+field (PHAS, "1")
+
+
+}
+
+
+record(ao, "Group4:PwrSup1:Curr:set") {
+
+field(DESC, "Set the Current")
+field(DTYP, "stream")
+field(OUT, "@PowerSupply1.proto setCurr $(PORT)")
+#field (SCAN, "Passive")
+field (EGU, "A")
+
+ 
+}
+
+record(ai, "$(user):Volt:get") {
+
+ 
+field(DESC, "Get the Voltage")
+field(DTYP, "stream")
+field(INP, "@PowerSupply1.proto getVolt DEV1")
+field(SCAN, "2 second")
+field(EGU, "V")
+field (PHAS, "0")
+
+
+}
+
+record(bo, "$(user):Enable") {
+
+ 
+field(DESC, "Enabling to Send Current")
+field(DTYP, "stream")
+field(OUT, "@PowerSupply1.proto enableCurr $(PORT)")
+field(ZNAM, "OFF")
+field(ONAM, "ON")
+field(VAL, "0")
+field(PINI, "YES")
+
+
+
+}
+
+record(ai, "$(user):Ramp:get") {
+
+ 
+field(DESC, "Get the Current Ramp Rate")
+field(DTYP, "stream")
+field(INP, "@PowerSupply1.proto getRamp DEV1")
+field(SCAN, "2 second")
+field(EGU, "A/s")
+
+
+}
+
+
+record(ao, "$(user):Ramp:set") {
+
+ 
+field(DESC, "Set the Current")
+field(DTYP, "stream")
+field(OUT, "@PowerSupply1.proto setRamp $(PORT)")
+field(SCAN, "2 second")
+field(EGU, "A")
+field(PINI, "YES")
+
+
+}
+record(stringin, "$(user):Status:get") {
+
+ 
+field(DESC, "Get the Status")
+field(DTYP, "stream")
+field(INP,"@PowerSupply1.proto getStatus $(PORT)")
+field (SCAN, "2 second")
+}
+record(stringin, "$(user):Model:get") {
+
+ 
+field(DESC, "Get the Model ID")
+field(DTYP, "stream")
+field(INP,"@PowerSupply1.proto getModel DEV1")
+field (SCAN, "10 second")
+}

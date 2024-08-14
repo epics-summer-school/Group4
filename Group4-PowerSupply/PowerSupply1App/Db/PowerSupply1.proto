@@ -1,0 +1,57 @@
+
+OutTerminator = '\r\n';
+ReadTimeout = 2000;
+ReplyTimeout = 2000;
+WriteTimeout = 2000; 
+
+getCurr {
+InTerminator = '\r';
+out "MRI";
+in "%*6c%f";
+ExtraInput = Ignore;
+
+}
+getStatus {
+ OutTerminator = '\r';
+ out "MST";
+ in "%7c";
+ ExtraInput = Ignore;
+}
+setCurr {
+out "MRM:%f";
+}
+
+getVolt {
+InTerminator = '\r';
+out "MRV";
+in "%*5c%f" ;
+
+}
+
+setRamp {
+out "MWSR:%f";
+
+}
+
+getRamp {
+InTerminator = '\r';
+out "MRSR";
+in "%*6c%f" ;
+
+}
+
+
+enableCurr {
+out "%{MOFF|MON}";
+
+
+}
+
+
+
+getModel {
+InTerminator = '\r';
+out "MRG:27";
+in "%s";
+
+}
