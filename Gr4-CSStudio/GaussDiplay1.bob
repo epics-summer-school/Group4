@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-08-15 14:50:08 by epics-->
+<display version="2.0.0">
+  <name>Display</name>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>Gaussmeter Control</text>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>550</width>
+    <height>31</height>
+    <font use_class="true">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_6</name>
+    <pv_name>Group4:GssMtr:Model:get</pv_name>
+    <x>150</x>
+    <y>40</y>
+    <width>400</width>
+    <precision>5</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Return X axis Value</text>
+    <y>70</y>
+    <width>150</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>Group4:GssMtr:MagX:get</pv_name>
+    <x>180</x>
+    <y>70</y>
+    <precision>5</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Return Y axis Value</text>
+    <y>110</y>
+    <width>150</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>Group4:GssMtr:MagY:get</pv_name>
+    <x>180</x>
+    <y>110</y>
+    <precision>5</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Return Z axis Value</text>
+    <y>150</y>
+    <width>150</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>Group4:GssMtr:MagZ:get</pv_name>
+    <x>180</x>
+    <y>150</y>
+    <precision>5</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>Return axis total Value</text>
+    <y>190</y>
+    <width>150</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>Group4:GssMtr:MagSum:get</pv_name>
+    <x>180</x>
+    <y>190</y>
+    <precision>5</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>Model</text>
+    <x>280</x>
+    <y>20</y>
+    <width>39</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="databrowser" version="2.0.0">
+    <name>Data Browser</name>
+    <x>60</x>
+    <y>290</y>
+    <width>370</width>
+    <height>230</height>
+  </widget>
+</display>

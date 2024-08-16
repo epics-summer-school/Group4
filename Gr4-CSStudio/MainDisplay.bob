@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-08-15 13:08:38 by epics-->
+<display version="2.0.0">
+  <name>Display</name>
+  <width>640</width>
+  <height>659</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>:) Control System</text>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>550</width>
+    <height>31</height>
+    <font use_class="true">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text></text>
+    <y>50</y>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>Picture_1</name>
+    <file>WhatsApp Image 2024-08-13 at 08.28.40(1).jpeg</file>
+    <x>20</x>
+    <y>50</y>
+    <width>160</width>
+    <height>130</height>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>Picture</name>
+    <file>WhatsApp Image 2024-08-13 at 08.28.40.jpeg</file>
+    <x>330</x>
+    <y>60</y>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>Picture_4</name>
+    <file>WhatsApp Image 2024-08-13 at 15.13.49(1).jpeg</file>
+    <x>490</x>
+    <y>60</y>
+    <height>90</height>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>Picture_3</name>
+    <file>WhatsApp Image 2024-08-13 at 15.13.49.jpeg</file>
+    <x>170</x>
+    <y>70</y>
+    <height>80</height>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <file>PowerSupplyDisplay.bob</file>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Power Supply</text>
+    <x>50</x>
+    <y>170</y>
+    <height>70</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions>
+      <action type="open_display">
+        <file>StepperMotorDisplay.bob</file>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Motor Control</text>
+    <x>200</x>
+    <y>170</y>
+    <height>70</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_2</name>
+    <actions>
+      <action type="open_display">
+        <file>GaussDiplay1.bob</file>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>GaussMeter</text>
+    <x>360</x>
+    <y>170</y>
+    <width>110</width>
+    <height>70</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <bit>1</bit>
+    <x>80</x>
+    <y>280</y>
+    <width>30</width>
+    <height>30</height>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <bit>1</bit>
+    <x>230</x>
+    <y>280</y>
+    <width>30</width>
+    <height>30</height>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_2</name>
+    <bit>1</bit>
+    <x>400</x>
+    <y>280</y>
+    <width>30</width>
+    <height>30</height>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>Picture_2</name>
+    <file>WhatsApp Image 2024-08-13 at 15.13.46.jpeg</file>
+    <y>333</y>
+    <width>493</width>
+    <height>326</height>
+  </widget>
+</display>

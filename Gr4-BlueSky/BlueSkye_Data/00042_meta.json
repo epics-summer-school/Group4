@@ -1,0 +1,47 @@
+{
+    "uid": "b9f3b149-1d79-45be-852c-9d41c695f27c",
+    "time": 1723722577.143321,
+    "scan_id": 42,
+    "plan_type": "generator",
+    "plan_name": "scan",
+    "detectors": [
+        "MyGaussMeter"
+    ],
+    "motors": [
+        "z_stage"
+    ],
+    "num_points": 20,
+    "num_intervals": 19,
+    "plan_args": {
+        "detectors": [
+            "GaussMeter(prefix='Group4:GssMtr1:', name='MyGaussMeter', read_attrs=['Bx', 'By', 'Bz', 'Btot'], configuration_attrs=[])"
+        ],
+        "num": 20,
+        "args": [
+            "StepperMotorPositioner(prefix='Gr4:Ax1_', name='z_stage', read_attrs=['setpoint', 'readback'], configuration_attrs=[])",
+            0,
+            -5300
+        ],
+        "per_step": "None"
+    },
+    "hints": {
+        "dimensions": [
+            [
+                [
+                    "z_stage_readback"
+                ],
+                "primary"
+            ]
+        ]
+    },
+    "plan_pattern": "inner_product",
+    "plan_pattern_module": "bluesky.plan_patterns",
+    "plan_pattern_args": {
+        "num": 20,
+        "args": [
+            "StepperMotorPositioner(prefix='Gr4:Ax1_', name='z_stage', read_attrs=['setpoint', 'readback'], configuration_attrs=[])",
+            0,
+            -5300
+        ]
+    }
+}

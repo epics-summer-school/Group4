@@ -1,6 +1,4 @@
 record(ai, "$(user):Curr:get") {
-
- 
 field(DESC, "Get the Current")
 field(DTYP, "stream")
 field(INP, "@PowerSupply1.proto getCurr DEV1")
@@ -8,33 +6,23 @@ field(SCAN, "2 second")
 field(EGU, "A")
 field(PINI, "YES")
 field (PHAS, "1")
-
-
 }
 
 
-record(ao, "Group4:PwrSup1:Curr:set") {
-
+record(ao, "$(user):Curr:set") {
 field(DESC, "Set the Current")
 field(DTYP, "stream")
 field(OUT, "@PowerSupply1.proto setCurr $(PORT)")
-#field (SCAN, "Passive")
 field (EGU, "A")
-
- 
 }
 
 record(ai, "$(user):Volt:get") {
-
- 
 field(DESC, "Get the Voltage")
 field(DTYP, "stream")
 field(INP, "@PowerSupply1.proto getVolt DEV1")
 field(SCAN, "2 second")
 field(EGU, "V")
 field (PHAS, "0")
-
-
 }
 
 record(bo, "$(user):Enable") {

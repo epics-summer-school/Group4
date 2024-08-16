@@ -13,6 +13,7 @@ record (ai, "Group4:GssMtr:MagX:get"){
     field(DTYP, "stream")
     field(INP, "@gauss.proto getXValue IP1")
     field(SCAN, "1 second")
+    field(PREC, "4")
     field (PHAS, "1")
 }
 record (ai, "Group4:GssMtr:MagY:get"){
@@ -21,6 +22,7 @@ record (ai, "Group4:GssMtr:MagY:get"){
     field(DTYP, "stream")
     field(INP, "@gauss.proto getYValue IP1")
     field(SCAN, "1 second")
+    field(PREC, "4")
     field (PHAS, "2")
 }
 record (ai, "Group4:GssMtr:MagZ:get"){
@@ -29,6 +31,7 @@ record (ai, "Group4:GssMtr:MagZ:get"){
     field(DTYP, "stream")
     field(INP, "@gauss.proto getZValue IP1")
     field(SCAN, "1 second")
+    field(PREC, "4")
     field (PHAS, "3")
 }
 record (ai, "Group4:GssMtr:MagSum:get"){
@@ -37,5 +40,15 @@ record (ai, "Group4:GssMtr:MagSum:get"){
     field(DTYP, "stream")
     field(INP, "@gauss.proto getAllValue IP1")
     field(SCAN, "1 second")
+    field(PREC, "4")
     field (PHAS, "4")
 }
+
+record (stringout, "Group4:GssMtr:RstBuf:set"){
+    field(DESC, "Resets the Buffer memory")
+    field(PINI, "YES")
+    field(DTYP, "stream")
+    field(OUT, "@gauss.proto resetBuffer IP1")
+    field(SCAN, "1 second")
+}
+

@@ -1,6 +1,10 @@
 OutTerminator = LF;
 ReadTimeout = 2000;
 ReplyTimeout =20000;
+resetBuffer {
+ out "FETCh:BUFFer:CLear"
+}
+
 getModel{
 
     out"*IDN?";
